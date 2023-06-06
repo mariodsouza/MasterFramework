@@ -11,8 +11,7 @@ public class StringToBrowserTypeConverter implements Converter<BrowserType>{
 	public BrowserType convert(Method method, String browserName) {
 		
 		return BrowserType.valueOf(browserName.toUpperCase());
+		
 	}
-	
-	
 
 }
