@@ -12,10 +12,13 @@ public class HomePage {
 	@Test
 	public void testHomePage() {
 		
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.mxplayer.in/");
-		driver.quit();
+		System.out.println(com.config.ConfigFactory.getConfig().browser());
+		
+		
+//		WebDriverManager.chromedriver().setup();
+//		WebDriver driver = new ChromeDriver();
+//		driver.get("https://www.mxplayer.in/");
+//		driver.quit();
 		
 	}
 
