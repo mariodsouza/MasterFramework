@@ -8,7 +8,7 @@ public class HomePage {
 	@Test
 	public void testHomePage() {
 		
-		System.out.println(com.config.ConfigFactory.getConfig().browser());
+		System.out.println(com.config.factory.ConfigFactory.getConfig().browser());
 		
 		
 		

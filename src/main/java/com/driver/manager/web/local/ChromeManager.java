@@ -1,4 +1,4 @@
-package com.driver.manager;
+package com.driver.manager.web.local;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
