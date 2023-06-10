@@ -1,4 +1,4 @@
-package com.driver.factory;
+package com.driver.factory.web.remote;
 
 import org.openqa.selenium.WebDriver;
 
@@ -20,7 +20,5 @@ public final class SeleniumGridFactory {
 			return null;
 		
 	}
-	
-	
 
 }

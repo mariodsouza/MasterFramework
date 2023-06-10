@@ -6,6 +6,10 @@ import org.aeonbits.owner.Config;
 
 import com.config.converters.StingToURLConverter;
 
+@Config.LoadPolicy(Config.LoadType.MERGE)
+@Config.Sources({
+		"file:${user.dir}/src/test/resources/browserstack.properties"
+		})
 public interface BrowserStackConfig extends Config {
 	
 	@Key("username")
@@ -13,7 +17,7 @@ public interface BrowserStackConfig extends Config {
 	
 	String key();
 	
-	@DefaultValue("https://${}userName:$key@hub-cloud.browserstack.com/wd/hub")
+	@DefaultValue("https://${username}:${key}@hub-cloud.browserstack.com/wd/hub")
 	@ConverterClass(StingToURLConverter.class)
 	URL broswerStackURL();
 

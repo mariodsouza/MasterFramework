@@ -1,4 +1,4 @@
-package com.driver.factory;
+package com.driver.factory.web.local;
 
 import org.openqa.selenium.WebDriver;
 import com.config.enums.BrowserType;

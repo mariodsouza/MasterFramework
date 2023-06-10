@@ -1,4 +1,4 @@
-package com.driver.factory;
+package com.driver.factory.web.remote;
 
 import org.openqa.selenium.WebDriver;
 
@@ -11,7 +11,7 @@ public final class RemoteDriverFactory {
 	
 	public static WebDriver getDriver(BrowserRemoteModeType browserRemoteModeType, BrowserType browserType) {
 		
-		if(browserRemoteModeType == BrowserRemoteModeType.SELENIUM) {
+		if (browserRemoteModeType == BrowserRemoteModeType.SELENIUM) {
 			return SeleniumGridFactory.getDriver(browserType);
 		} else if (browserRemoteModeType == BrowserRemoteModeType.BROWSER_STACK) {
 			return BrowserStackFactory.getDriver(browserType);

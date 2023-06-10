@@ -3,14 +3,14 @@ package com.config.converters;
 import java.lang.reflect.Method;
 import org.aeonbits.owner.Converter;
 
-import com.config.enums.RunModeBrowserType;
+import com.config.enums.RunModeType;
 
-public class StringToRunModeBrowserTypeConverter implements Converter<RunModeBrowserType>{
+public class StringToRunModeBrowserTypeConverter implements Converter<RunModeType>{
 
 	@Override
-	public RunModeBrowserType convert(Method method, String browserRunMode) {
+	public RunModeType convert(Method method, String browserRunMode) {
 		
-		return RunModeBrowserType.valueOf(browserRunMode.toUpperCase());
+		return RunModeType.valueOf(browserRunMode.toUpperCase());
 		
 	}
 

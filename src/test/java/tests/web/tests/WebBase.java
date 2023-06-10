@@ -1,4 +1,5 @@
-package com.web.tests;
+package tests.web.tests;
+
 
 import org.testng.annotations.BeforeMethod;
 

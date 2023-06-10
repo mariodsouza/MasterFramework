@@ -1,6 +1,6 @@
 package com.config.enums;
 
-public enum RunModeBrowserType {
+public enum RunModeType {
 	
 	LOCAL,
 	REMOTE;
